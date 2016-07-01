@@ -14,11 +14,17 @@ folders:
       to: /home/vagrant/Code
 
 sites:
-    - map: homestead.app
-      to: /home/vagrant/Code/Laravel/public
+    - map: app.doctorpad.dev
+      to: /home/vagrant/Code/app.doctorpad.dev/app
+    
+    - map: api.doctorpad.dev
+      to: /home/vagrant/Code/api.doctorpad.dev/public
+
+    - map: doctorpad.dev
+      to: /home/vagrant/Code/doctorpad.dev
 
 databases:
-    - homestead
+    - doctorpad
 
 # blackfire:
 #     - id: foo
@@ -30,5 +36,4 @@ databases:
 #     - send: 50000
 #       to: 5000
 #     - send: 7777
-#       to: 777
-#       protocol: udp
+#       to: 77#       protocol: udp
